@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.demo;
+package org.redbuddha.personalblog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

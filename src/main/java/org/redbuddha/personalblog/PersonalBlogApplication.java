@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.demo;
+package org.redbuddha.personalblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
