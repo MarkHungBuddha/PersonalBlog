@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.personalblog.dao;
+package org.redbuddha.personalblog.model;
 
 import jakarta.persistence.*;
 import java.time.Instant;
@@ -25,16 +25,12 @@ public class Post {
   @Column(name = "title", nullable = false)
   private String title;
 
-  @Lob
   @Column(name = "content", nullable = false)
   private String content;
 
-  @ColumnDefault("'DRAFT'")
-  @Lob
   @Column(name = "status", nullable = false)
-  private String status;
+  private UserStatus status;
 
-  @Lob
   @Column(name = "meta_description")
   private String metaDescription;
 

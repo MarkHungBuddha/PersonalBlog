@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.personalblog.dao;
+package org.redbuddha.personalblog.model;
 
 import jakarta.persistence.*;
 import java.time.Instant;
@@ -12,10 +12,9 @@ import org.hibernate.annotations.ColumnDefault;
 @Getter
 @Setter
 @Entity
-@Table(name = "postimages")
-public class Postimage {
+@Table(name = "postviews")
+public class Postview {
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id", nullable = false)
   private Integer id;
 
@@ -23,13 +22,13 @@ public class Postimage {
   @JoinColumn(name = "post_id", nullable = false)
   private Post post;
 
-  @Column(name = "image_url", nullable = false)
-  private String imageUrl;
+  @Column(name = "ip_address", nullable = false, length = 45)
+  private String ipAddress;
 
-  @Column(name = "alt_text")
-  private String altText;
+  @Column(name = "user_agent")
+  private String userAgent;
 
   @ColumnDefault("CURRENT_TIMESTAMP")
-  @Column(name = "created_at")
-  private Instant createdAt;
+  @Column(name = "viewed_at")
+  private Instant viewedAt;
 }

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.personalblog.dao;
+package org.redbuddha.personalblog.model;
 
 import jakarta.persistence.*;
 import java.time.Instant;
@@ -27,7 +27,6 @@ public class User {
   @Column(name = "password_hash", nullable = false)
   private String passwordHash;
 
-  @Lob
   @Column(name = "role", nullable = false)
   private String role;
 

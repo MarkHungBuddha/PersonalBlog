@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2024 - redBuddhaHung.
   */
-package org.redbuddha.personalblog.dao;
+package org.redbuddha.personalblog.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
